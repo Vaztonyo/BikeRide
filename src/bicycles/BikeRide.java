@@ -1,7 +1,7 @@
 package bicycles;
 
-import bicycles.models.MountainBike;
-import bicycles.models.RoadBike;
+//import bicycles.models.MountainBike;
+//import bicycles.models.RoadBike;
 
 public class BikeRide {
 
@@ -13,9 +13,6 @@ public class BikeRide {
 
     }
 
-    public BikeRide() {
-
-    }
 
     public int currentSpeed() {
         return this.bicycle.currentSpeed();

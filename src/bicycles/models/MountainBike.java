@@ -3,16 +3,9 @@ package bicycles.models;
 import bicycles.Bicycle;
 import bicycles.BikeRide;
 
-public class MountainBike extends BikeRide implements Bicycle {
+public class MountainBike  implements Bicycle {
     private int speed;
 
-    public MountainBike(MountainBike mountainBike) {
-        super(mountainBike);
-    }
-
-    public MountainBike() {
-        super();
-    }
 
     @Override
     public void accelerate() {
