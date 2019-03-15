@@ -1,28 +1,14 @@
 package bicycles;
 
-public class Bicycle {
+public interface Bicycle {
+//    int speed = 0;
 
-   private int speed;
+     void accelerate();
 
+     void brake();
 
-    public void accelerate() {
-        speed += 5;
+     void stop();
 
-       // return speed;
-    }
-
-    public void brake() {
-        speed -= 3;
-
-        //return speed;
-    }
-
-    public void stop() {
-        speed = 0;
-    }
-
-    public int currentSpeed() {
-        return speed;
-    }
+     int currentSpeed();
 }
 
