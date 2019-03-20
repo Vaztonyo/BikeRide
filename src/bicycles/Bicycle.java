@@ -10,5 +10,7 @@ public interface Bicycle {
      int currentSpeed();
 
      void brake();
+
+     BicycleType getBicycleType();
 }
 

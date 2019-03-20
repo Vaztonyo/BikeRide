@@ -3,6 +3,7 @@ package bicycles;
 public abstract class BicycleBase implements Bicycle {
 
     private int speed;
+    private BicycleType bicycleType;
 
     protected void changeSpeed(int speedChange) {
         if (speed >= 0){
@@ -23,5 +24,10 @@ public abstract class BicycleBase implements Bicycle {
         return this.speed;
     }
 
-    public abstract void brake();
+//    public abstract void brake();
+
+    @Override
+    public BicycleType getBicycleType(){
+        return this.bicycleType;
+    }
 }
