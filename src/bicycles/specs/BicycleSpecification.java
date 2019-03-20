@@ -1,4 +1,4 @@
-package bicycles;
+package bicycles.specs;
 
 public class BicycleSpecification {
     private int accelerationSpeed;
@@ -14,7 +14,9 @@ public class BicycleSpecification {
     public int getAccelerationSpeed(){
         return accelerationSpeed;
     }
+
     // add getters for brakeSpeed
+
     public int getBrakeSpeed(){
         return brakeSpeed;
     }
