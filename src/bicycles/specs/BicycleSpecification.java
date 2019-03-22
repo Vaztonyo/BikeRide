@@ -4,7 +4,7 @@ import bicycles.BicycleType;
 
 public class BicycleSpecification {
 
-    private final BicycleType bicycleType;
+    private BicycleType bicycleType;
     private int accelerationSpeed;
     // add a variable for brakeSpeed
     private int brakeSpeed;

@@ -4,8 +4,9 @@ import bicycles.BicycleBase;
 
 public class BicycleFromSpec extends BicycleBase {
 
-    private BicycleSpecification bicycle;
-    BicycleFromSpec(BicycleSpecification bicycle){
+    public BicycleSpecification bicycle;
+
+    public BicycleFromSpec(BicycleSpecification bicycle){
         this.bicycle = bicycle;
     }
 

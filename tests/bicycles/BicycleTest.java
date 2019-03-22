@@ -11,15 +11,18 @@ public class BicycleTest {
 
     public static class MountainBikeTest {
         @Test
-        public void shouldGetAccelerationSpeed() {
-            BicycleSpecification mountainBikeSpec = new BicycleSpecification(5, -3);
-            assertEquals(mountainBikeSpec.getAccelerationSpeed(),5);
+        public void shouldAccelerate() {
+            MountainBike bicycle = new MountainBike();
+            bicycle.accelerate();
+            assertEquals(bicycle.currentSpeed(),5);
         }
 
         @Test
-        public void shouldGetBrakeSpeed() {
-            BicycleSpecification mountainBikeSpec = new BicycleSpecification(5, -3);
-            assertEquals(mountainBikeSpec.getBrakeSpeed(),-3);
+        public void shouldBrake() {
+            MountainBike bicycle = new MountainBike();
+            bicycle.accelerate();
+            bicycle.brake();
+            assertEquals(bicycle.currentSpeed(),2);
         }
 
         @Test
@@ -41,15 +44,18 @@ public class BicycleTest {
 
     public static class RoadBikeTest {
         @Test
-        public void shouldGetAccelerationSpeed() {
-            BicycleSpecification roadBikeSpec = new BicycleSpecification(11, -4);
-            assertEquals(roadBikeSpec.getAccelerationSpeed(),11);
+        public void shouldAccelerate() {
+            RoadBike bicycle = new RoadBike();
+            bicycle.accelerate();
+            assertEquals(bicycle.currentSpeed(),11);
         }
 
         @Test
-        public void shouldGetBrakeSpeed() {
-            BicycleSpecification roadBikeSpec = new BicycleSpecification(11, -4);
-            assertEquals(roadBikeSpec.getBrakeSpeed(),-4);
+        public void shouldBrake() {
+            RoadBike bicycle = new RoadBike();
+            bicycle.accelerate();
+            bicycle.brake();
+            assertEquals(bicycle.currentSpeed(),7);
         }
 
         @Test
