@@ -24,7 +24,6 @@ public abstract class BicycleBase implements Bicycle {
         return this.speed;
     }
 
-    @Override
     public BicycleType getBicycleType(){
         return this.bicycleType;
     }

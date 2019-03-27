@@ -2,6 +2,7 @@ package bicycles.models;
 
 //import bicycles.Bicycle;
 import bicycles.BicycleBase;
+import bicycles.BicycleType;
 import bicycles.specs.BicycleSpecification;
 
 
@@ -19,6 +20,11 @@ public class RoadBike  extends BicycleBase {
     @Override
     public void brake() {
         changeSpeed(brakeSpeed);
+    }
+
+    @Override
+    public BicycleType getBicycleType() {
+        return BicycleType.RoadBike;
     }
 
 }
